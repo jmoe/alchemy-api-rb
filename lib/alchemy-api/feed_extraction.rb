@@ -1,5 +1,5 @@
 module AlchemyAPI
-  class EntityExtraction < Base
+  class FeedExtraction < Base
     Config.add_mode :feed_extraction, self
 
     def web_method
