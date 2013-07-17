@@ -16,8 +16,7 @@ module AlchemyAPI
     def parsed_response
       case Config.output_mode
       when :json
-        parsed = JSON.parse(@response.body)
-        indexer ? parsed[indexer] : parsed
+        JSON.parse(@response.body)      
       when :xml
       when :rdf
         raise NotImplementedError.new
